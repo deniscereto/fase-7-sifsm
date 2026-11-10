@@ -1,0 +1,24 @@
+LINK DO CIRCUITO NO TINKERCAD
+=============================
+https://www.tinkercad.com/things/lPlG9CJDRrs-sifsm-alerta-critico
+(Tinkercad > abrir o circuito > Compartilhar > "Convidar pessoas" / tornar público e copiar o link)
+
+COMO MONTAR (passo a passo - ~10 minutos)
+-----------------------------------------
+1. tinkercad.com > Circuitos > Criar novo circuito.
+2. Arraste: 1 Arduino Uno R3, 1 placa de ensaio pequena, 1 potenciômetro,
+   1 chave deslizante, 1 botão, 2 LEDs (verde e vermelho), 2 resistores 220 Ω,
+   1 piezo (buzzer).
+3. Ligações (ver circuito_logico.png):
+   - Potenciômetro: terminal 1 -> 5V | terminal 2 -> GND | cursor (meio) -> A0
+   - Chave deslizante: comum -> D2 | um dos lados -> GND
+   - Botão: um terminal -> D3 | terminal oposto -> GND
+   - D8 -> resistor 220 Ω -> ânodo (perna maior) do LED verde; cátodo -> GND
+   - D9 -> resistor 220 Ω -> ânodo do LED vermelho; cátodo -> GND
+   - D10 -> (+) do piezo; (-) do piezo -> GND
+4. Código > Texto > apague o exemplo e cole o conteúdo de arduino_sifsm.ino.
+5. Iniciar simulação e testar a tabela verdade:
+   - Potenciômetro alto + chave em "crítico"  -> LED vermelho + buzzer (A·B)
+   - Potenciômetro alto + chave em "não crítico" -> LED verde
+   - Apertar o botão em qualquer situação -> LED vermelho + buzzer (C)
+   - Abra o "Monitor serial" para mostrar A, B, C e S no vídeo.

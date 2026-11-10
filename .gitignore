@@ -1,0 +1,15 @@
+﻿# Videos
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# Python
+__pycache__/
+*.pyc
+
+# Copia compactada da pasta
+*.zip
+
+# Roteiro do video
+roteiro_video_SIFSM.pdf

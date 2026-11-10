@@ -1,0 +1,12 @@
+# Obrigatórias para executar o sistema (todas usadas nas disciplinas da fase)
+numpy
+pandas
+matplotlib
+scipy
+sympy
+scikit-learn
+
+# Opcionais
+# oracledb        -> conectar no Oracle da FIAP (SIFSM_DB=oracle); sem ele o sistema usa SQLite
+# schemdraw       -> apenas para regenerar a figura do circuito (gerar_circuito.py)
+# openai-agents   -> apenas para a versão conceitual com LLM (agentes_openai_sdk_conceitual.py)
